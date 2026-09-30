@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: Barlow, 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
   background-color: var(--background-color);
@@ -24,7 +24,7 @@ input,
 button,
 select,
 textarea {
-  font-family: Barlow, 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
 }
 
@@ -296,22 +296,22 @@ main>.contain {
   cursor: pointer;
   user-select: none;
   color: #fff;
-  border: 1px solid var(--main-color);
-  background-color: var(--main-color);
+  border: 1px solid #fb923c4d;
+  background: linear-gradient(to right, #f97316, #ea580c);
   height: 50px;
   padding: 0px 26px;
   box-sizing: border-box;
   font-size: 1rem;
-  border-radius: 10px;
+  border-radius: 9999px;
   box-shadow: 0 1px 2px rgba(var(--main-color-rgb), 0.25);
-  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  transition: all .3s cubic-bezier(.4, 0, .2, 1);
   text-decoration: none;
 }
 
 .button:hover {
-  background-color: var(--hover-color);
-  border-color: var(--hover-color);
-  box-shadow: 0 4px 10px -2px rgba(var(--main-color-rgb), 0.35);
+  background: linear-gradient(to right, #FB923C, #f97316);
+  border-color: #fb923c80;
+  box-shadow: 0 0 24px rgba(238, 138, 42, 0.25);
 }
 
 .button.thin {
@@ -566,7 +566,7 @@ button.mobile-action-renew {
   border: 1px solid var(--box-border-color);
   box-shadow: var(--box-shadow);
   padding: 12px 15px;
-  border-radius: 16px;
+  border-radius: 12px;
   cursor: pointer;
   position: relative;
   transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
@@ -954,7 +954,7 @@ header #avatar {
   object-fit: cover;
   max-width: 80px;
   border-radius: 50%;
-  border: 1px solid #ccc;
+  border: 1px solid var(--box-border-color);
   box-sizing: border-box;
 }
 
@@ -1024,7 +1024,7 @@ header #avatar {
   height: 60px;
   object-fit: cover;
   cursor: pointer;
-  border: 1px solid #ccc;
+  border: 1px solid var(--box-border-color);
   box-sizing: border-box
 }
 
@@ -1069,7 +1069,7 @@ header #avatar {
   font-weight: 600;
   align-items: center;
   justify-content: center;
-  border: 1px solid #ccc;
+  border: 1px solid var(--box-border-color);
   width: 25px;
   height: 25px;
   box-sizing: border-box;
@@ -1111,7 +1111,7 @@ header #avatar {
 }
 
 .account-notifications-section {
-  border: 1px solid #ccc;
+  border: 1px solid var(--box-border-color);
   border-radius: 8px;
   margin-bottom: 10px;
   overflow: hidden;
@@ -1719,7 +1719,7 @@ input[type="submit"]:disabled,
 input[type="button"]:disabled,
 button.button:disabled {
   background-color: #ccc;
-  border-color: #ccc;
+  border-color: var(--box-border-color);
 }
 
 input[type="button"].left button.button.left {
@@ -2056,7 +2056,7 @@ button.dark-theme-button {
   align-items: center;
   justify-content: center;
   font-size: 18px !important;
-  border: 1px solid #ccc;
+  border: 1px solid var(--box-border-color);
   border-radius: 8px;
   padding: 16px 20px 14px;
   background-color: transparent;
@@ -2339,7 +2339,7 @@ button.dark-theme-button i {
   border: 1px solid var(--box-border-color);
   background-color: var(--box-background-color);
   padding: 20px 35px 20px 25px;
-  box-shadow: 0 6px 20px -5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 24px -6px rgba(0, 0, 0, 0.6);
   overflow: hidden;
   transform: translateX(calc(100% + 30px));
   transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
@@ -2398,12 +2398,12 @@ button.dark-theme-button i {
 .toast-content .message .text {
   font-size: 16px;
   font-weight: 400;
-  color: #666666;
+  color: var(--text-muted);
 }
 
 .toast-content .message .text.text-1 {
   font-weight: 600;
-  color: #333;
+  color: var(--text-color);
 }
 
 .toast .close {
@@ -2570,7 +2570,7 @@ button.dark-theme-button i {
   cursor: pointer;
   background: none;
   border: none;
-  font-family: Barlow, 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 13px;
   color: var(--text-color);
   padding: 2px 4px;
@@ -2778,7 +2778,7 @@ button.dark-theme-button i {
 
 .theme-preview {
   cursor: pointer;
-  border: 1px solid #ccc;
+  border: 1px solid var(--box-border-color);
   border-radius: 8px;
   padding: 20px 15px 20px 10px;
   display: flex;
@@ -3184,10 +3184,10 @@ input[type="checkbox"]+label::before {
   transform: translateY(-50%);
   width: 44px;
   height: 24px;
-  background-color: #e9e9eb;
+  background-color: var(--input-background-color);
   border-radius: 12px;
   transition: background-color 0.3s ease;
-  border: 1px solid #ccc;
+  border: 1px solid var(--box-border-color);
 }
 
 input[type="checkbox"]+label::after {
@@ -3209,11 +3209,11 @@ input[type="checkbox"]:focus+label::before {
 }
 
 input[type="checkbox"]:disabled+label::before {
-  background-color: #d3d3d3;
+  background-color: var(--input-disabled-background-color);
 }
 
 input[type="checkbox"]:disabled+label::after {
-  background-color: #f0f0f0;
+  background-color: #7FA9C4;
 }
 
 input[type="checkbox"]:checked+label::before {
@@ -3249,8 +3249,8 @@ input[type="radio"]+label::before {
   top: 0;
   width: 24px;
   height: 24px;
-  background: #fafafa;
-  border: 1px solid #ccc;
+  background: var(--input-background-color);
+  border: 1px solid var(--box-border-color);
   border-radius: 50%;
   box-sizing: border-box;
 }
@@ -4406,7 +4406,7 @@ body.details-open {
   border: 1px solid var(--input-border-color);
   background-color: var(--input-background-color);
   color: var(--text-color);
-  font-family: Barlow, 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 15px;
   font-weight: 600;
   text-align: start;

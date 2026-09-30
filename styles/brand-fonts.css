@@ -1,0 +1,49 @@
+/* 5DV Brand Design System — fonts + foundation tokens */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root {
+  --brand-primary: #EE8A2A;
+  --brand-on-primary: #081820;
+  --brand-secondary: #0E2A3D;
+  --brand-accent: #F6A24D;
+  --brand-background: #081820;
+  --brand-surface: #0E2A3D;
+  --brand-text: #FFFFFF;
+  --brand-muted: #1B3A5B;
+  --brand-muted-foreground: #7FA9C4;
+  --brand-border: #1B3A5B;
+  --brand-destructive: #EE8A2A;
+  --brand-accent-apricot: #FFD3A3;
+  --brand-accent-amber: #F5A623;
+  --brand-ui-orange-400: #FB923C;
+  --brand-portal-orange: #FF7A1A;
+  --brand-navy-deep: #050810;
+  --brand-font-heading: 'Space Grotesk', sans-serif;
+  --brand-font-body: 'Inter', sans-serif;
+  --brand-font-weight-regular: 400;
+  --brand-font-weight-medium: 500;
+  --brand-font-weight-bold: 700;
+  --brand-sp-1: 8px;
+  --brand-sp-2: 16px;
+  --brand-sp-3: 24px;
+  --brand-sp-4: 48px;
+  --brand-radius-none: 0px;
+  --brand-radius-sm: 4px;
+  --brand-radius-md: 12px;
+  --brand-radius-full: 9999px;
+  --brand-radius: 12px;
+  --brand-shadow-none: none;
+  --brand-shadow-sm: 0 4px 12px rgba(0,0,0,0.5);
+  --brand-shadow-md: 0 8px 24px rgba(0,0,0,0.6);
+  --brand-shadow-lg: 0 0 32px rgba(238,138,42,0.15);
+  --brand-shadow: 0 8px 24px rgba(0,0,0,0.6);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--brand-font-heading);
+  letter-spacing: -0.025em;
+}
+
+body {
+  font-family: var(--brand-font-body);
+}

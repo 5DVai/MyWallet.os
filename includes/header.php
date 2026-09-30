@@ -83,9 +83,9 @@ $mobileNavigation = $settings['mobile_nav'] ? "mobile-navigation" : "";
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Wallos - Subscription Tracker</title>
-  <meta name="apple-mobile-web-app-title" content="Wallos">
-  <meta name="theme-color" content="<?= $theme == "light" ? "#FFFFFF" : "#12151C" ?>" id="theme-color" />
+  <title>5DV - Subscription Tracker</title>
+  <meta name="apple-mobile-web-app-title" content="5DV">
+  <meta name="theme-color" content="#081820" id="theme-color" />
   <meta name="referrer" content="no-referrer">
   <link rel="icon" type="image/png" href="images/icon/favicon.ico" sizes="16x16">
   <link rel="apple-touch-icon" href="images/icon/apple-touch-icon.png">
@@ -99,7 +99,7 @@ $mobileNavigation = $settings['mobile_nav'] ? "mobile-navigation" : "";
   <link rel="stylesheet" href="styles/themes/green.css?<?= $version ?>" id="green-theme" <?= $colorTheme != "green" ? "disabled" : "" ?>>
   <link rel="stylesheet" href="styles/themes/yellow.css?<?= $version ?>" id="yellow-theme" <?= $colorTheme != "yellow" ? "disabled" : "" ?>>
   <link rel="stylesheet" href="styles/themes/purple.css?<?= $version ?>" id="purple-theme" <?= $colorTheme != "purple" ? "disabled" : "" ?>>
-  <link rel="stylesheet" href="styles/barlow.css">
+  <link rel="stylesheet" href="styles/brand-fonts.css">
   <link rel="stylesheet" href="styles/font-awesome.min.css">
   <link rel="stylesheet" href="styles/brands.css">
   <script type="text/javascript" src="scripts/all.js?<?= $version ?>"></script>
@@ -167,7 +167,7 @@ $mobileNavigation = $settings['mobile_nav'] ? "mobile-navigation" : "";
     <div class="contain">
       <div class="logo">
         <a href=".">
-          <div class="logo-image" title="Wallos - Subscription Tracker">
+          <div class="logo-image" title="5DV - Subscription Tracker">
             <?php include "images/siteicons/svg/logo.php"; ?>
           </div>
         </a>
